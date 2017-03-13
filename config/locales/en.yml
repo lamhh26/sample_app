@@ -20,4 +20,50 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  static_pages:
+    home:
+      header: "Sample App"
+      signup: "Sign up now!"
+      logo: "Rails logo"
+      description: "This is the home page for the %{link} sample application."
+      rails_tut: "Ruby on Rails Tutorial"
+    help:
+      title: "Help"
+      header: "Help"
+      description: "Get help on the Ruby on Rails Tutorial at the %{link1}.To get help on this sample app, see the Ruby on Rails Tutorial %{link2}."
+      rails_help: "Rails Tutorial help page"
+      rails_book: "Ruby on Rails Tutorial book"
+    about:
+      title: "About"
+      header: "About"
+      description: "The %{link1} is a %{link2} and %{link3} to teach web development with %{link4}. This is the sample application for the tutorial."
+      rails_tut: "Ruby on Rails Tutorial"
+      rails_help: "Rails Tutorial help page"
+      rails_book: "book"
+      rails_screencast: "screencast series"
+      ruby_rails: "Ruby on Rails"
+    contact:
+      title: "Contact"
+      header: "Contact"
+      description: "Contact the Ruby on Rails Tutorial about the sample app at the %{link}."
+      contact_text: "contact page"
+  layouts:
+    footer:
+      about: "About"
+      contact: "Contact"
+      news: "News"
+      text: "The %{link1} by %{link2}"
+      rails_tut: "Ruby on Rails Tutorial"
+      author: "Michael Hartl"
+    header:
+      app: "sample app"
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+    application:
+      base_title: "Ruby on Rails Tutorial Sample App"
+  users:
+    new:
+      title: "Sign up"
+      header: "Sign up"
+      description: "This will be a signup page for new users."
