@@ -66,4 +66,11 @@ en:
     new:
       title: "Sign up"
       header: "Sign up"
-      description: "This will be a signup page for new users."
+      pass_confirm: "Confirmation"
+      create: "Create my account"
+    create:
+      success: "Welcome to the Sample App!"
+  shared:
+    error_messages:
+      error_content: "The form contains "
+      error: "error"
