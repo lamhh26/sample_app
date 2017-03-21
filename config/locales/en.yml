@@ -60,6 +60,11 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+      users: "Users"
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Log out"
+      account: "Account"
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
   users:
@@ -70,6 +75,17 @@ en:
       create: "Create my account"
     create:
       success: "Welcome to the Sample App!"
+    show:
+      user_not_found: "User not found"
+  sessions:
+    new:
+      title: "Log in"
+      header: "Log in"
+      login: "Log in"
+      new_user: "New user? "
+      signup: "Sign up now!"
+    create:
+      invalid: "Invalid email/password combination"
   shared:
     error_messages:
       error_content: "The form contains "
