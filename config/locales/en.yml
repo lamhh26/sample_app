@@ -68,6 +68,10 @@ en:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
   users:
+    index:
+      title: "All users"
+      header: "All users"
+      danger: "Please log in."
     new:
       title: "Sign up"
       header: "Sign up"
@@ -77,6 +81,27 @@ en:
       success: "Welcome to the Sample App!"
     show:
       user_not_found: "User not found"
+      danger: "Please log in."
+    edit:
+      title: "Edit user"
+      header: "Update your profile"
+      pass_confirm: "Confirmation"
+      save: "Save changes"
+      change: "change"
+      danger: "Please log in."
+      user_not_found: "User not found"
+    update:
+      profile: "Profile updated"
+      danger: "Please log in."
+      user_not_found: "User not found"
+    destroy:
+      success: "User deleted"
+      warning: "Delete failed"
+      danger: "Please log in."
+      user_not_found: "User not found"
+      not_admin: "You are not authorized!"
+    user:
+      confirm: "You sure?"
   sessions:
     new:
       title: "Log in"
