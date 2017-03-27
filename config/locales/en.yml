@@ -78,7 +78,7 @@ en:
       pass_confirm: "Confirmation"
       create: "Create my account"
     create:
-      success: "Welcome to the Sample App!"
+      activation: "Please check your email to activate your account."
     show:
       user_not_found: "User not found"
       danger: "Please log in."
@@ -111,8 +111,19 @@ en:
       signup: "Sign up now!"
       remember: "Remember me on this computer"
     create:
+      not_activated: "Account not activated. Check your email for the activation link."
       invalid: "Invalid email/password combination"
   shared:
     error_messages:
       error_content: "The form contains "
       error: "error"
+  user_mailer:
+    account_activation:
+      header: "Sample App"
+      hi: "Hi "
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+  account_activations:
+    edit:
+        activated: "Account activated!"
+        invalid_activation: "Invalid activation link"
