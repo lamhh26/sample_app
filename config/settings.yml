@@ -9,3 +9,7 @@ gravatar:
   size2: 80
 page: 25
 time: 2
+content:
+  maximum: 140
+picture:
+  size: 5

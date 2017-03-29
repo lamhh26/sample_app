@@ -27,6 +27,7 @@ en:
       logo: "Rails logo"
       description: "This is the home page for the %{link} sample application."
       rails_tut: "Ruby on Rails Tutorial"
+      feed: "Micropost Feed"
     help:
       title: "Help"
       header: "Help"
@@ -82,6 +83,7 @@ en:
     show:
       user_not_found: "User not found"
       danger: "Please log in."
+      microposts: "Microposts: "
     edit:
       title: "Edit user"
       header: "Update your profile"
@@ -114,10 +116,26 @@ en:
     create:
       not_activated: "Account not activated. Check your email for the activation link."
       invalid: "Invalid email/password combination"
+  microposts:
+    micropost:
+      posted: "Posted "
+      ago: " ago."
+      confirm: "You sure?"
+    create:
+      success: "Micropost created!"
+    destroy:
+      success: "Micropost deleted"
   shared:
     error_messages:
       error_content: "The form contains "
       error: "error"
+    user_info:
+      view_profile: "view my profile"
+      micropost: "micropost"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      submit: "Post"
+      alert: "Maximum file size is 5MB. Please choose a smaller file."
   user_mailer:
     account_activation:
       subject: "Account activation"
