@@ -27,6 +27,7 @@ en:
       logo: "Rails logo"
       description: "This is the home page for the %{link} sample application."
       rails_tut: "Ruby on Rails Tutorial"
+      feed: "Micropost Feed"
     help:
       title: "Help"
       header: "Help"
@@ -82,6 +83,10 @@ en:
     show:
       user_not_found: "User not found"
       danger: "Please log in."
+      microposts: "Microposts: "
+      no_microposts: "No microposts, go to "
+      home: "Home"
+      create: " to create"
     edit:
       title: "Edit user"
       header: "Update your profile"
@@ -114,10 +119,30 @@ en:
     create:
       not_activated: "Account not activated. Check your email for the activation link."
       invalid: "Invalid email/password combination"
+  microposts:
+    micropost:
+      posted: "Posted "
+      ago: " ago."
+      confirm: "You sure?"
+    index:
+      danger: "Please log in."
+    create:
+      success: "Micropost created!"
+      danger: "Please log in."
+    destroy:
+      success: "Micropost deleted"
+      warning: "Micropost delete failed"
+      danger: "Please log in."
   shared:
     error_messages:
       error_content: "The form contains "
       error: "error"
+    user_info:
+      view_profile: "view my profile"
+      micropost: "micropost"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      submit: "Post"
   user_mailer:
     account_activation:
       subject: "Account activation"
@@ -155,3 +180,4 @@ en:
       expired: "Password reset has expired."
       empty: "can't be empty"
       success: "Password has been reset."
+  less_than: "should be less than 5MB"

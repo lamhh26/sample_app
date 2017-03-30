@@ -10,6 +10,8 @@ class UsersController < ApplicationController
   end
 
   def show
+    @microposts = @user.microposts.order_desc.paginate page: params[:page],
+      per_page: Settings.page
   end
 
   def new
@@ -63,21 +65,15 @@ class UsersController < ApplicationController
     end
   end
 
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = t ".danger"
-      redirect_to login_url
-    end
-  end
-
   def correct_user
     @user = User.find_by id: params[:id]
     redirect_to root_url unless current_user? @user
   end
 
   def admin_user
-    flash[:warning] = t ".not_admin"
-    redirect_to root_url unless current_user.admin?
+    unless current_user.admin?
+      flash[:warning] = t ".not_admin"
+      redirect_to root_url
+    end
   end
 end
