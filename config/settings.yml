@@ -7,6 +7,7 @@ password:
 gravatar:
   size1: 50
   size2: 80
+  size3: 30
 page: 25
 time: 2
 content:
