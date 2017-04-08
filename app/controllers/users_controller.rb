@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.select(:id, :name, :email).paginate page: params[:page],
+    @users = User.select(:id, :name, :email).search(params[:search]).paginate page: params[:page],
       per_page: Settings.page
   end
 

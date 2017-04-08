@@ -1,7 +1,14 @@
 <% provide :title, t(".title") %>
 <h1><%= t ".header" %></h1>
 
-<%= will_paginate %>
+<div class="input-group">
+  <%= form_tag users_path, :method => "get", id: "search-form" do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Users", class: 'form-control' %>
+    <span class="input-group-btn">
+      <%= submit_tag "Search", class: 'btn btn-default' %>
+    </span>
+  <% end %>
+</div>
 
 <ul class="users">
   <% @users.each do |user| %>

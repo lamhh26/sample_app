@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     end
   end
   resources :users
+  resources :search_suggestions, only: :index
   resources :account_activations, only: :edit
   resources :password_resets, except: [:index, :show, :destroy]
   resources :microposts, only: [:index, :create, :destroy]

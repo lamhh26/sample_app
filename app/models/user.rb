@@ -12,6 +12,8 @@ class User < ApplicationRecord
   before_save :downcase_email
   before_create :create_activation_digest
 
+  scope :search, ->name {where "name like ?", "%#{name}%" if name.present?}
+
   validates :name, presence: true, length: {maximum: Settings.name.maximum}
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, length: {maximum: Settings.email.maximum},
